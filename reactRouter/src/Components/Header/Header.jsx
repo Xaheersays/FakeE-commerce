@@ -7,7 +7,7 @@ import cart from "../../assets/shopping-cart.gif";
 
 export default function Header() {
   const [hide, setHide] = useState(false);
-  const cats = ["jewelery", "men", "women"];
+  const cats = ["electronics","jewelery", "men", "women"];
 
   // dont even try to  make new navLinks again and again on render
   const navLinks = useMemo(() => {

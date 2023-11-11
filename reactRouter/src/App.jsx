@@ -2,9 +2,11 @@ import {React, useState } from 'react'
 import './App.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from '../src/Components/Layout/Layout.jsx'
-import { Header } from './Components/index.js'
+import Header from "./Components/Header/Header.jsx";
+import All from './Components/Navgs/All.jsx'
 
-const All = () => <div>Home Page</div>;
+
+
 const Electronics = () => <div>electronics Page</div>;
 const Jewelery = () => <div>jewelery Page</div>;
 const Men = () => <div>Men Page</div>;
