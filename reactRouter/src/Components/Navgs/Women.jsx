@@ -30,7 +30,7 @@ export default function Women(){
 
     return (
         <>
-        <div className="border-2 flex flex-wrap w-screen   justify-around md:p-3 gap-10 p-4">
+        <div className=" flex flex-wrap w-screen   justify-around md:p-3 gap-10 p-4">
             {data_arr}
         </div>
         </>

@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <>
       {/* div to wrap everything */}
-      <div className="flex justify-between items-center border-2 p-3 relative">
+      <div className="flex justify-between items-center border-b-2 border-blue-500 p-3 relative bg-slate-900">
         {/* image div */}
         <div>
           <img
@@ -98,7 +98,7 @@ export default function Header() {
           <div>
             <div>
               <img
-                className="h-10 cursor-pointer w-10 rounded-full"
+                className="h-10 cursor-pointer w-10  rounded-md hover:opacity-75 transition duration-300 "
                 src={user}
                 alt=""
               />
@@ -107,7 +107,7 @@ export default function Header() {
           <div>
             <div>
               <img
-                className="h-10 w-10 cursor-pointer rounded-full shadow-white"
+                className="h-10 w-10   shadow-white rounded-md hover:opacity-75 transition duration-300 cursor-pointer"
                 src={cart}
                 alt=""
               />

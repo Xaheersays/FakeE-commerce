@@ -4,7 +4,6 @@ import Template from './Template'
 export default function Electronics(){
     // i am getting array of 20 objects
     const [data,setData] = useState([])
-    
     const url = "https://fakestoreapi.com/products/category/electronics";
     useEffect(()=>{
       fetch(url).then(res=>res.json()).then((data)=>{
@@ -30,7 +29,7 @@ export default function Electronics(){
 
     return (
         <>
-        <div className="border-2 flex flex-wrap w-screen   justify-around md:p-3 gap-10 p-4">
+        <div className=" flex flex-wrap w-screen   justify-around md:p-3 gap-10 p-4">
             {data_arr}
         </div>
         </>
