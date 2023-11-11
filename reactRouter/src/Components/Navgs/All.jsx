@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Template from './Template'
-import { FetchData } from "./DataFetch.js";
 
 export default function All(){
     // i am getting array of 20 objects
@@ -14,7 +13,6 @@ export default function All(){
         .catch(error=>console.error(error));
     },[])
     
-    console.log(FetchData)
 
     const data_arr = useMemo(() => {
         return data.map((data_obj) => (

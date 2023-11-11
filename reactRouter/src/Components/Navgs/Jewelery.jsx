@@ -5,7 +5,15 @@ import Template from './Template'
 export default function Jewelery(){
     // i am getting array of 20 objects
    
-    
+    const [data,setData] = useState([])
+    const url = "https://fakestoreapi.com/products/category/jewelery";
+    useEffect(()=>{
+      fetch(url).then(res=>res.json()).then((data)=>{
+          setData(data)
+          console.log(data)
+      })
+      .catch(error=>console.error(error));
+  },[])
 
     const data_arr = useMemo(() => {
         return data.map((data_obj) => (

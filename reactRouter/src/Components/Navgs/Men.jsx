@@ -1,10 +1,20 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Template from './Template'
-
+// https://fakestoreapi.com/products/category/men's%20clothing
 
 export default function Men(){
     // i am getting array of 20 objects
-   
+    const [data,setData] = useState([])
+
+    const url = "https://fakestoreapi.com/products/category/men's%20clothing";
+    useEffect(()=>
+      {
+      fetch(url).then(res=>res.json()).then((data)=>{
+          setData(data)
+          console.log(data)
+      })
+      .catch(error=>console.error(error));
+  },[])
     
 
     const data_arr = useMemo(() => {
