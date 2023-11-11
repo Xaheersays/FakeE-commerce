@@ -4,13 +4,11 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Layout from '../src/Components/Layout/Layout.jsx'
 import Header from "./Components/Header/Header.jsx";
 import All from './Components/Navgs/All.jsx'
+import Electronics from './Components/Navgs/Electronics.jsx'
+import Jewelery  from './Components/Navgs/Jewelery.jsx'
+import Men from './Components/Navgs/Men.jsx'
+import Women from './Components/Navgs/Women.jsx'
 
-
-
-const Electronics = () => <div>electronics Page</div>;
-const Jewelery = () => <div>jewelery Page</div>;
-const Men = () => <div>Men Page</div>;
-const Women = () => <div>Women Page</div>;
 
 let categories = ["electronics", "jewelery", "mens-clothing", "womens-clothing"];
 

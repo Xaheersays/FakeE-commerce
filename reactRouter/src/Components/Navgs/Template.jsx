@@ -11,9 +11,9 @@ export default function Template(props){
 
         {/* outer div */}
         <div className=' md:w-1/4  flex flex-col items-center p-4 bg-gray-200 text-black md:gap-4
-        rounded-2xl cursor-pointer w-full shadow-lg  
+        rounded-2xl cursor-pointer w-full shadow-lg justify-between
         ' 
-        style={{ boxShadow: '0 4px 8px rgba(255, 255, 255, 0.8)', opacity: 0.92 }}
+        style={{ boxShadow: '0 4px 8px rgba(255, 255, 255, 0.8)', opacity: 0.92 ,margin:'left',margin:'right'}}
         >
 
             {/* image div */}
@@ -27,17 +27,20 @@ export default function Template(props){
                     {title}
                 </h4>
             </div>
-            {/* price */}
-            <div className='font-bold text-red-600'>
-                <p>
-                price : {price} &#x20B9;
-                </p>
-            </div>
-            {/* ratings */}
-            <div className='flex flex-col items-center cursor-default'>
-                <p className='text-sm'>Ratings : {rate} &#9733;</p>
-                <p className='font-light '
-                >Total Ratings: {count}</p>
+            <div className='flex-end flex flex-col items-center '>
+
+                {/* price */}
+                <div className='font-bold text-red-600'>
+                    <p>
+                    price : {price} &#x20B9;
+                    </p>
+                </div>
+                {/* ratings */}
+                <div className='flex flex-col items-center cursor-default'>
+                    <p className='text-sm'>Ratings : {rate} &#9733;</p>
+                    <p className='font-light '
+                    >Total Ratings: {count}</p>
+                </div>
             </div>
 
         </div>
